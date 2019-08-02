@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF7DF014-DBAD-415E-8375-DC2D89664C9F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VeriTabani</RootNamespace>
+    <AssemblyName>VeriTabani</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaEkran.Designer.cs">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriekle.Designer.cs">
+      <DependentUpon>Musteriekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciSatislari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciSatislari.Designer.cs">
+      <DependentUpon>TedarikciSatislari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UreticiKimyasalMaddeStoklari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UreticiKimyasalMaddeStoklari.Designer.cs">
+      <DependentUpon>UreticiKimyasalMaddeStoklari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UreticiKarOranlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UreticiKarOranlari.Designer.cs">
+      <DependentUpon>UreticiKarOranlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UreticiyeGelenSiparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UreticiyeGelenSiparisler.Designer.cs">
+      <DependentUpon>UreticiyeGelenSiparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciHammaddeStoklari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciHammaddeStoklari.Designer.cs">
+      <DependentUpon>TedarikciHammaddeStoklari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UreticiKimyasalUrunUret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UreticiKimyasalUrunUret.Designer.cs">
+      <DependentUpon>UreticiKimyasalUrunUret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UreticiHammaddeSatinAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UreticiHammaddeSatinAl.Designer.cs">
+      <DependentUpon>UreticiHammaddeSatinAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciHammaddeUret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciHammaddeUret.Designer.cs">
+      <DependentUpon>TedarikciHammaddeUret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UreticiHammaddeleriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UreticiHammaddeleriListele.Designer.cs">
+      <DependentUpon>UreticiHammaddeleriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriSiparis.Designer.cs">
+      <DependentUpon>MusteriSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UreticiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UreticiEkle.Designer.cs">
+      <DependentUpon>UreticiEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciEkle.Designer.cs">
+      <DependentUpon>TedarikciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VeriTabaniTabloFormlari\TBL_KIMYASAL_URUNLER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_KIMYASAL_URUNLER.Designer.cs">
+      <DependentUpon>TBL_KIMYASAL_URUNLER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_URETICI_TEDARIKCI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_URETICI_TEDARIKCI.Designer.cs">
+      <DependentUpon>TBL_URETICI_TEDARIKCI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_URETICI_KIMYASALMADDESTOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_URETICI_KIMYASALMADDESTOK.Designer.cs">
+      <DependentUpon>TBL_URETICI_KIMYASALMADDESTOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_URETICI_HAMMADDESTOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_URETICI_HAMMADDESTOK.Designer.cs">
+      <DependentUpon>TBL_URETICI_HAMMADDESTOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_URETICI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_URETICI.Designer.cs">
+      <DependentUpon>TBL_URETICI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_TEDARIKCI_HAMMADDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_TEDARIKCI_HAMMADDE.Designer.cs">
+      <DependentUpon>TBL_TEDARIKCI_HAMMADDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_TEDARIKCI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_TEDARIKCI.Designer.cs">
+      <DependentUpon>TBL_TEDARIKCI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_MUSTERILER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_MUSTERILER.Designer.cs">
+      <DependentUpon>TBL_MUSTERILER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_MUSTERI_KM_SIPARIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_MUSTERI_KM_SIPARIS.Designer.cs">
+      <DependentUpon>TBL_MUSTERI_KM_SIPARIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_KIMYASAL_URUN_BILGI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_KIMYASAL_URUN_BILGI.Designer.cs">
+      <DependentUpon>TBL_KIMYASAL_URUN_BILGI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_HAMMADDELER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniTabloFormlari\TBL_HAMMADDELER.Designer.cs">
+      <DependentUpon>TBL_HAMMADDELER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VTP2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VTP2DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaEkran.resx">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriekle.resx">
+      <DependentUpon>Musteriekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciSatislari.resx">
+      <DependentUpon>TedarikciSatislari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UreticiKimyasalMaddeStoklari.resx">
+      <DependentUpon>UreticiKimyasalMaddeStoklari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UreticiKarOranlari.resx">
+      <DependentUpon>UreticiKarOranlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UreticiyeGelenSiparisler.resx">
+      <DependentUpon>UreticiyeGelenSiparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciHammaddeStoklari.resx">
+      <DependentUpon>TedarikciHammaddeStoklari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UreticiKimyasalUrunUret.resx">
+      <DependentUpon>UreticiKimyasalUrunUret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UreticiHammaddeSatinAl.resx">
+      <DependentUpon>UreticiHammaddeSatinAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciHammaddeUret.resx">
+      <DependentUpon>TedarikciHammaddeUret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UreticiHammaddeleriListele.resx">
+      <DependentUpon>UreticiHammaddeleriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriSiparis.resx">
+      <DependentUpon>MusteriSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UreticiEkle.resx">
+      <DependentUpon>UreticiEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciEkle.resx">
+      <DependentUpon>TedarikciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_KIMYASAL_URUNLER.resx">
+      <DependentUpon>TBL_KIMYASAL_URUNLER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_URETICI_TEDARIKCI.resx">
+      <DependentUpon>TBL_URETICI_TEDARIKCI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_URETICI_KIMYASALMADDESTOK.resx">
+      <DependentUpon>TBL_URETICI_KIMYASALMADDESTOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_URETICI_HAMMADDESTOK.resx">
+      <DependentUpon>TBL_URETICI_HAMMADDESTOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_URETICI.resx">
+      <DependentUpon>TBL_URETICI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_TEDARIKCI_HAMMADDE.resx">
+      <DependentUpon>TBL_TEDARIKCI_HAMMADDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_TEDARIKCI.resx">
+      <DependentUpon>TBL_TEDARIKCI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_MUSTERILER.resx">
+      <DependentUpon>TBL_MUSTERILER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_MUSTERI_KM_SIPARIS.resx">
+      <DependentUpon>TBL_MUSTERI_KM_SIPARIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_KIMYASAL_URUN_BILGI.resx">
+      <DependentUpon>TBL_KIMYASAL_URUN_BILGI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabaniTabloFormlari\TBL_HAMMADDELER.resx">
+      <DependentUpon>TBL_HAMMADDELER.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VTP2DataSet.xsc">
+      <DependentUpon>VTP2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VTP2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VTP2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VTP2DataSet.xss">
+      <DependentUpon>VTP2DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
